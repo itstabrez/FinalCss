@@ -1,0 +1,239 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLES */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #9b9b9b;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+}
+
+/* Navigation Bar: logo and image */
+#logo {
+    margin: 5px 25px;
+}
+
+#logo img {
+    height: 50px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Changa One', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li a:hover {
+    color: rgb(158, 50, 50);
+    background: white;
+}
+
+/* HOME SECTION */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url('bg4.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 676px;
+    width: 100%;
+    z-index: -1;
+    opacity: .55;
+}
+
+/* Services Section */
+#services-container::before {
+    content: "";
+    position: absolute;
+    height: 608px;
+    width: 100%;
+    z-index: -1;
+    background-color: rgb(173 173 173);
+    opacity: .1;
+}
+#services {
+    margin: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#services .box {
+    margin: 3px 22px;
+    border: 2px solid brown;
+    padding: 35px;
+    border-radius: 20px;
+    background-color: #f3ffec;
+}
+
+#services .box img {
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client Section */
+
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url('bg3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#clients-section{
+    /* height: 350px; */
+    position: relative;
+    z-index: -1;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-item{
+    padding: 33px;
+}
+#clients img{
+    height: 124px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.2rem;
+}
+#contact-box form{
+    width: 40%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* UTILITY CLASSES */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+#home h1 {
+    color: black;
+}
+
+#home p {
+    color: black;
+    font-size: 1.0rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.h-primary {
+    font-size: 3.1rem;
+    padding: 5px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(219, 58, 58);
+    color: white;
+    margin: 17px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(112, 238, 175);
+}
+
+.center {
+    text-align: center;
+}
